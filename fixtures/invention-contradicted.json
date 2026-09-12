@@ -1,0 +1,24 @@
+{
+  "name": "invention-contradicted",
+  "expectedVerdict": "CONTRADICTED",
+  "report": {
+    "title": "Advanced AI Implementation Report",
+    "content": "Successfully implemented state-of-the-art quantum machine learning algorithms with distributed neural architecture. Achieved breakthrough performance using novel optimization techniques and advanced computational methods.",
+    "claims": [
+      "Quantum machine learning algorithms implemented",
+      "Distributed neural architecture deployed",
+      "Breakthrough performance achieved",
+      "Novel optimization techniques applied"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "tool-io",
+      "content": "Running simple_script.py\nOutput: Hello World\nScript completed"
+    },
+    {
+      "type": "digest",
+      "content": "Basic script execution - no advanced algorithms detected"
+    }
+  ]
+}

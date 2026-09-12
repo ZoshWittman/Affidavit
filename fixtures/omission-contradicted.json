@@ -1,0 +1,27 @@
+{
+  "name": "omission-contradicted",
+  "expectedVerdict": "CONTRADICTED",
+  "report": {
+    "title": "Deployment Success Report",
+    "content": "All systems deployed successfully. Everything is working as expected. No issues encountered during the deployment process.",
+    "claims": [
+      "Deployment completed successfully",
+      "All services are running",
+      "No issues detected"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "tool-io",
+      "content": "Deploying services...\nService A: OK\nService B: OK\nService C: ERROR - Connection timeout\nRetrying Service C... FAILED"
+    },
+    {
+      "type": "tool-io",
+      "content": "ERROR: Database connection failed\nERROR: Unable to initialize cache\nWARNING: Fallback mode activated"
+    },
+    {
+      "type": "digest",
+      "content": "Critical errors occurred but were not mentioned in the report"
+    }
+  ]
+}

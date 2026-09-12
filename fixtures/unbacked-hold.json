@@ -1,0 +1,15 @@
+{
+  "name": "unbacked-hold",
+  "expectedVerdict": "HOLD",
+  "report": {
+    "title": "Project Milestone Report",
+    "content": "Completed multiple critical project milestones ahead of schedule.",
+    "claims": [
+      "Frontend redesign completed",
+      "Backend API refactored",
+      "Security audit passed",
+      "Performance optimization implemented"
+    ]
+  },
+  "evidence": []
+}

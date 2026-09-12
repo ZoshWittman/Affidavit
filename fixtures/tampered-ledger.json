@@ -1,0 +1,19 @@
+{
+  "name": "tampered-ledger",
+  "expectedVerdict": "CONTRADICTED",
+  "description": "This fixture tests detection of tampered evidence hashes. The test should manually tamper with the hash after evidence creation.",
+  "report": {
+    "title": "Valid Report",
+    "content": "This is a legitimate report",
+    "claims": [
+      "Task completed"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "tool-io",
+      "content": "Task output: success",
+      "tamper": "hash"
+    }
+  ]
+}

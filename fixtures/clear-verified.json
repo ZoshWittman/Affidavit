@@ -1,0 +1,32 @@
+{
+  "name": "clear-verified",
+  "expectedVerdict": "VERIFIED",
+  "report": {
+    "title": "Task Completion Report",
+    "content": "Successfully completed all assigned tasks. All tests passed with 100% success rate. Database migrations applied without errors. API endpoints deployed and verified operational.",
+    "claims": [
+      "All tests passed",
+      "Database migrations completed",
+      "API endpoints deployed successfully",
+      "System is operational"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "tool-io",
+      "content": "npm test\n\nPassed: 47/47\nFailed: 0\nCoverage: 95%\n\nAll tests passed successfully"
+    },
+    {
+      "type": "tool-io",
+      "content": "Database migration output:\nApplying migration 001_initial_schema... OK\nApplying migration 002_add_indexes... OK\nAll migrations completed successfully"
+    },
+    {
+      "type": "tool-io",
+      "content": "Deployment output:\nDeploying API endpoints...\n/api/health - deployed\n/api/users - deployed\n/api/packets - deployed\nAll endpoints operational"
+    },
+    {
+      "type": "digest",
+      "content": "System health check passed at 2026-09-12T03:00:00Z"
+    }
+  ]
+}
